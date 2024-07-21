@@ -1,6 +1,6 @@
 # Weather App with React and API
 ## Description
-This weather app uses your location to generate current weather information for where ever you are located. The App is built with React with the help of (this freeCodeCamp tutorial)[https://www.freecodecamp.org/news/learn-react-by-building-a-weather-app/] and data fetched from the (OpenWeather)[https://openweathermap.org/current] current weather data API.
+This weather app uses your location to generate current weather information for where ever you are located. The App is built with React with the help of [this freeCodeCamp tutorial](https://www.freecodecamp.org/news/learn-react-by-building-a-weather-app/) and data fetched from the [OpenWeather](https://openweathermap.org/current) current weather data API.
 
 
 ## Available Scripts
