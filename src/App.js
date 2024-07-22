@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Weather from './components/weather';
 import './App.css';
+import Clouds from './components/clouds';
+import Weather from './components/weather';
 
 export default function App() {
   const [lat, setLat] = useState([]);
@@ -26,9 +27,14 @@ export default function App() {
   return (
     <div className="App">
       {(typeof data.main != 'undefined') ? (
-        <Weather weatherData={data}/>
+        <div>
+          <Clouds />
+          <Weather weatherData={data}/>
+        </div>
       ): (
-        <div></div>
+      <div>
+        <Clouds />
+      </div>
       )}
     </div>
   );
