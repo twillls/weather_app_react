@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import Clouds from './components/clouds';
 import Weather from './components/weather';
+import { Dimmer, Loader } from 'semantic-ui-react';
 
 export default function App() {
   const [lat, setLat] = useState([]);
@@ -33,7 +34,9 @@ export default function App() {
         </div>
       ): (
       <div>
-        <Clouds />
+        <Dimmer active>
+          <Loader>Loading...</Loader>
+        </Dimmer>
       </div>
       )}
     </div>
